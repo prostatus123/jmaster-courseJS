@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <!-- Base Definition -->
+    <definition name="base-definition" template="/WEB-INF/views/layouts/defaultLayout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp"/>
+    </definition>
+
+    <!-- User Page -->
+    <definition name="addUser" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/user/add.jsp"/>
+    </definition>
+    <definition name="viewUser" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/user/viewUser.jsp"/>
+    </definition>
+    <definition name="viewUserInDetail" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/user/viewUserInDetail.jsp"/>
+    </definition>
+    <definition name="editUser" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/user/edit.jsp"/>
+    </definition>
+
+    <!-- Product Page -->
+    <definition name="addProduct" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/product/add.jsp"/>
+    </definition>
+    <definition name="viewProduct" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/product/viewProduct.jsp"/>
+    </definition>
+    <definition name="viewProductInDetail" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/product/viewProductInDetail.jsp"/>
+    </definition>
+    <definition name="editProduct" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/product/edit.jsp"/>
+    </definition>
+
+    <!-- Error Page -->
+    <definition name="404" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/error/404.jsp"/>
+    </definition>
+    <definition name="500" extends="base-definition">
+        <put-attribute name="body" value="/WEB-INF/views/error/500.jsp"/>
+    </definition>
+
+</tiles-definitions>
